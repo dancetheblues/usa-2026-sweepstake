@@ -58,72 +58,76 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased">
 
-  <style>
+<style>
   .watford-wc-tracker {
-    background-color: #FBEE23; /* Official Watford Yellow */
-    color: #000000;
+    background-color: #1a1a1a; /* Sleek Dark Charcoal (Toned down) */
+    color: #ffffff; /* Crisp white text */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    padding: 8px 16px;
+    padding: 6px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: 2px solid #ED1C24; /* Watford Red Accent */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    border-bottom: 3px solid #FBEE23; /* Very thin Watford Accent Line */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   }
   .watford-wc-tracker .brand-area {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-weight: 700;
-    font-size: 0.95rem;
-    letter-spacing: -0.2px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #e0e0e0;
   }
   .watford-wc-tracker .wfc-badge {
-    height: 24px; /* Small, highly discreet badge sizing */
+    height: 20px; /* Small, very discreet badge */
     width: auto;
     object-fit: contain;
     vertical-align: middle;
   }
   .watford-wc-tracker .player-links {
     display: flex;
-    gap: 10px;
+    gap: 8px;
   }
   .watford-wc-tracker a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.4);
-    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px 10px;
     border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: all 0.15s ease-in-out;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
     gap: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
   .watford-wc-tracker a:hover {
-    background-color: #000000;
-    color: #FBEE23;
+    background-color: #FBEE23;
+    color: #000000; /* Flashes Watford yellow only on hover */
+    border-color: #FBEE23;
   }
   @media (max-width: 600px) {
-    .watford-wc-tracker { flex-direction: column; gap: 8px; text-align: center; justify-content: center; }
+    .watford-wc-tracker { flex-direction: column; gap: 6px; text-align: center; justify-content: center; padding: 8px; }
   }
 </style>
 
 <div class="watford-wc-tracker">
   <div class="brand-area">
     <img src="https://upload.wikimedia.org/wikipedia/en/e/e2/Watford.svg" alt="Watford FC" class="wfc-badge">
-    <span>World Cup Tracker</span>
+    <span>Watford World Cup Players</span>
   </div>
   
   <div class="player-links">
-    <a href="https://www.flashscore.com/player/kayembe-edo/W8I9pI0t/" target="_blank">🇨🇩 Kayembe</a>
-    <a href="https://www.flashscore.com/player/irankunda-nestory/4z0rVlTf/" target="_blank">🇦🇺 Irankunda</a>
-    <a href="https://www.flashscore.com/player/selvik-egil/OId08v0p/" target="_blank">🇳🇴 Selvik</a>
+    <a href="https://www.flashscore.com/player/kayembe-edo/fPTJ6Fqs/" target="_blank">🇨🇩 Kayembe</a>
+    <a href="https://www.flashscore.com/player/irankunda-nestor/OdWRR5EU/" target="_blank">🇦🇺 Irankunda</a>
+    <a href="https://www.flashscore.com/player/selvik-egil/6XWRGqnm/" target="_blank">🇳🇴 Selvik</a>
   </div>
 </div>
-
+  
   <!-- TOP HERO/HEADER -->
   <header class="relative overflow-hidden bg-gradient-to-br from-brand-900 via-slate-900 to-usa-blue text-white py-12 px-4 shadow-xl border-b-4 border-brand-500">
     <!-- Abstract subtle stadium light design in background -->
